@@ -1,0 +1,24 @@
+namespace Teste;
+
+
+union Any {
+    TypeC 
+}
+
+
+
+
+table TypeC{
+    data: string;
+}
+
+
+
+
+table Base{
+    id: int (id:0);
+    name: string (id:1);
+    device: Any (id:3);
+}
+
+root_type Base;

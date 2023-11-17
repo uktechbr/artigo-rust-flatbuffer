@@ -1,0 +1,33 @@
+namespace Teste;
+
+
+union Any {
+    TypeA (id: 0),
+    TypeB,
+    TypeC,
+    TypeD,
+}
+
+table TypeA{
+    data: int;
+}
+
+table TypeB{
+    data: int;
+}
+
+table TypeC{
+    data: string;
+}
+
+table TypeD{
+    data: int;
+}
+
+table Base{
+    id: int;
+    name: string;
+    device: Any;
+}
+
+root_type Base;
